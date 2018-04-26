@@ -1,0 +1,16 @@
+schema {
+  query: Query
+}
+
+type Query {
+  getSelf(): User
+  getUser(id: string): User
+  listUsers(): [User]
+}
+
+type User {
+  id: string
+  email: string
+  firstname: string
+  lastname: string
+}
